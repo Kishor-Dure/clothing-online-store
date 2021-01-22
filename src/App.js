@@ -12,6 +12,7 @@ import Header from './Component/header/header.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utility';
 import {setCurrentUser} from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors';
+import Contact from './Component/Contact/Contact';
 
 class App extends React.Component {
 
@@ -47,6 +48,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route path='/shop' component={ShopPage} />
+          <Route path='/contactus' component={Contact} />
           <Route exact path='/checkout' component ={CheckoutPage} />
           <Route exact path='/signin'
            render={()=> this.props.currentUser ?

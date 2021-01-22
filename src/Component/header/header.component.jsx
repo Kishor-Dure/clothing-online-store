@@ -22,7 +22,7 @@ const Header = ({currentUser, hidden}) => (
             <Link className='option' to='/shop'>
                 SHOP     
             </Link>
-            <Link className='option' to='/'>
+            <Link className='option' to='/contactus'>
                 CONTACT     
             </Link>
             {currentUser ? (
