@@ -2,7 +2,7 @@ import React from 'react';
 import {Switch, Route, Redirect } from 'react-router-dom';
 import {connect} from 'react-redux';
 import {createStructuredSelector} from 'reselect';
-import './App.css';
+import './global-styles/global-styles.scss';
 
 import HomePage from '../src/Component/Pages/Homepages/homepage.component';
 import ShopPage from './Component/Pages/Shop/shop.component';
